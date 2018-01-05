@@ -1,0 +1,24 @@
+
+   <div>
+
+       <li  class="file-button" ><i class="ms-Icon ms-Icon--i"></i> Get myDrive Files List</li> 
+       <div>
+           <p>Welcome {{user.display_name}}</p>
+       </div>
+
+        <p>New file Shared link: <span id="share-link">{{link}}</span></p>
+
+       <div class= "file-header">
+        <ul class="file_list">
+            {{#each file}}
+            <li class="file-item">
+                <b>File-Name: </b>{{this.name}} <br/>
+                <b>id: </b> {{this.id}} <br/>
+                <a>{{this.webUrl}}</a> <br/>
+            </li>
+            {{/each}}
+        </ul>       
+           {{!-- onclick="window.location.href='file-list'"   --}}
+        
+       <div> 
+   </div>
